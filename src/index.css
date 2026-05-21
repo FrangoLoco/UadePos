@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personalización para los colores de tu interfaz UAdeO */
+@layer base {
+    :root {
+        --sidebar-dark: #1e293b;
+        /* El azul oscuro del menú lateral */
+        --uadeo-green: #10b981;
+        /* El verde del botón 'Cobrar' */
+    }
+
+    body {
+        @apply bg-gray-100 text-slate-900;
+    }
+}
+
+/* Clase de utilidad para las tarjetas de tu dashboard */
+.card-stat {
+    @apply bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex items-center space-x-4;
+}
